@@ -1,0 +1,30 @@
+artifact_path: sklearn-model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.1
+mlflow_version: 2.18.0
+model_size_bytes: 10535762
+model_uuid: dce0adfc74b94f64a84605aee98f7a10
+run_id: 04d6c767508f455ea7190d9acb66f00c
+signature:
+  inputs: '[{"type": "double", "name": "PSH Flag Count", "required": true}, {"type":
+    "double", "name": "Min Packet Length", "required": true}, {"type": "double", "name":
+    "Bwd Packet Length Min", "required": true}, {"type": "long", "name": "Day", "required":
+    true}, {"type": "double", "name": "Bwd Packets/s", "required": true}, {"type":
+    "double", "name": "Bwd Packet Length Std", "required": true}, {"type": "double",
+    "name": "URG Flag Count", "required": true}, {"type": "double", "name": "Bwd Packet
+    Length Max", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-12-10 16:31:42.852433'
